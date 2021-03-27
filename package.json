@@ -1,0 +1,27 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe app",
+  "default": "index.html",
+  "scripts": {
+    "dev": "chrome.exe http://localhost:1234 -incognito && parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist",
+    "cl-dist": "rm -rf ./.parcel-cache ./dist",
+    "cl-all": "rm -rf ./.parcel-cache ./dist ./node_modules ./package-lock.json"
+  },
+  "keywords": [],
+  "author": "Dinos Bazoukis",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.9.1",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-private-methods": "^7.13.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.13.0",
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  }
+}
